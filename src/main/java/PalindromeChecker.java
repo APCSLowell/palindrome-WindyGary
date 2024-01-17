@@ -39,8 +39,13 @@ public boolean palindrome(String word)
 {
   //your code here
   String reversed = reverse(word).toUpperCase();
-  String notReversed = word.toUpperCase();
+  String notReversed = new String();
   // fix with Character.isLetter();
+  for (int i = 0; i < word.length(); i++){
+    if (Character.isLetter(word.charAt(i))){
+      notReversed += word.charAt(i);
+    }
+  }
   if (reversed.equals(notReversed)){
     return true;
   }
