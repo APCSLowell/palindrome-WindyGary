@@ -51,7 +51,9 @@ public String reverse(String str)
     String sNew = new String();
     //your code here
     for (int i = str.length()-1; i >= 0; i--){
-      sNew += str.substring(i, i+1);
+      if (Character.isLetter(str.charAt(i))){
+      sNew += str.charAt(i));
+      }
     }
     return sNew;
   }
