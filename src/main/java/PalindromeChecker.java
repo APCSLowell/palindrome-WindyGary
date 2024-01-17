@@ -43,7 +43,7 @@ public boolean palindrome(String word)
   // fix with Character.isLetter();
   for (int i = 0; i < word.length(); i++){
     if (Character.isLetter(word.charAt(i))){
-      notReversed += word.charAt(i);
+      notReversed += word.substring(i, i+1);
     }
   }
   if (reversed.equals(notReversed)){
@@ -58,7 +58,7 @@ public String reverse(String str)
     //your code here
     for (int i = str.length()-1; i >= 0; i--){
       if (Character.isLetter(str.charAt(i))){
-      sNew += str.charAt(i));
+      sNew += str.substring(i, i+1);
       }
     }
     return sNew;
