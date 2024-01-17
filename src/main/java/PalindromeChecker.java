@@ -45,16 +45,6 @@ public boolean palindrome(String word)
   }
   return false;
 }
-public boolean palindrome(String word)
-{
-  //your code here
-  String reversed = reverse(word).toUpperCase();
-  String notReversed = word.toUpperCase();
-  if (reversed.equals(notReversed)){
-    return true;
-  }
-  return false;
-}
 
 public String reverse(String str)
 {
