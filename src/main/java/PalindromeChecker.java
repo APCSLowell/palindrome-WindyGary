@@ -45,15 +45,15 @@ public boolean palindrome(String word)
   }
   return false;
 }
-public String reverse(String str)
+public boolean palindrome(String word)
 {
-    String sNew = new String();
-    //your code here
-    for (int i = str.length()-1; i >= 0; i--){
-      sNew += str.substring(i, i+1);
-    }
-    return sNew;
+  //your code here
+  String reversed = reverse(word).toUpperCase();
+  String notReversed = word.toUpperCase();
+  if (reversed.equals(notReversed)){
+    return true;
   }
+  return false;
 }
 
 public String reverse(String str)
