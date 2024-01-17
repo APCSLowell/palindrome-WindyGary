@@ -40,9 +40,11 @@ public boolean palindrome(String word)
   //your code here
   String reversed = reverse(word).toUpperCase();
   String notReversed = "";
+
+  // to upper case()
   for (int i = 0; i < word.length(); i++){
     if (Character.isLetter(word.charAt(i))){
-      notReversed += word.substring(i, i+1);
+      notReversed += word.substring(i, i+1).toUpperCase();
     }
   }
   if (reversed.equals(notReversed)){
