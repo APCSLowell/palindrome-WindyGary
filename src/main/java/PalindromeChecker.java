@@ -40,6 +40,7 @@ public boolean palindrome(String word)
   //your code here
   String reversed = reverse(word).toUpperCase();
   String notReversed = word.toUpperCase();
+  // fix with Character.isLetter();
   if (reversed.equals(notReversed)){
     return true;
   }
